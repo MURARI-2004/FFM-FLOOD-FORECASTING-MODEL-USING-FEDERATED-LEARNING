@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+body{
+background-image:url("/static/images/flood_bg.jpg");
+background-size:cover;
+background-attachment:fixed;
+}
+
+.dashboard-card{
+padding:30px;
+border-radius:10px;
+color:white;
+font-size:18px;
+font-weight:bold;
+text-align:center;
+transition:0.3s;
+}
+
+.dashboard-card:hover{
+transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+
+<div class="container">
+
+<h4 class="text-white">
+<i class="fa-solid fa-water"></i>
+Flood Forecasting Admin Panel
+</h4>
+
+<a href="/logout" class="btn btn-danger">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</a>
+
+</div>
+
+</nav>
+
+<div class="container mt-5">
+
+<div class="row g-4">
+
+<div class="col-md-3">
+<a href="/training">
+<div class="dashboard-card bg-primary">
+<i class="fa-solid fa-gears fa-2x"></i><br><br>
+Training
+</div>
+</a>
+</div>
+
+<div class="col-md-3">
+<a href="/model_perf">
+<div class="dashboard-card bg-success">
+<i class="fa-solid fa-chart-line fa-2x"></i><br><br>
+Model Performance
+</div>
+</a>
+</div>
+
+<div class="col-md-3">
+<a href="/prediction">
+<div class="dashboard-card bg-warning text-dark">
+<i class="fa-solid fa-cloud-rain fa-2x"></i><br><br>
+Prediction
+</div>
+</a>
+</div>
+
+
+</a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
